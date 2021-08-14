@@ -17,7 +17,7 @@ def main():
     # Taking the json data from FILENAME. 
 
     payroll_data = read_from_file(FILENAME)
-    #print(payroll_data)
+    print(type(payroll_data))
 
 if __name__ == '__main__':
     main()
