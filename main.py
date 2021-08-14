@@ -1,6 +1,6 @@
 import os
 
-from setup_nyc_payroll import download_data
+from setup_nyc_payroll import download_data, read_from_file
 
 FISCAL_YEAR = 2020
 LIMIT = 1000000
@@ -14,7 +14,10 @@ def main():
     else:
         print(f"Skipping download {FILENAME} exists")
 
-    # Implement reading from FILENAME 
+    # Taking the json data from FILENAME. 
+
+    payroll_data = read_from_file(FILENAME)
+    #print(payroll_data)
 
 if __name__ == '__main__':
     main()
