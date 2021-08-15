@@ -1,4 +1,6 @@
 import os
+import aiohttp
+import asyncio
 
 from setup_nyc_payroll import download_data, read_from_file
 
@@ -10,14 +12,17 @@ def main():
 
     # Checks if the FILENAME has already been downloaded
     if not os.path.isfile(FILENAME):
+        
         download_data(FISCAL_YEAR, LIMIT, FILENAME)
-    else:
-        print(f"Skipping download {FILENAME} exists")
+    #else:
+      #  print(f"Skipping download {FILENAME} exists")
 
     # Taking the json data from FILENAME. 
 
-    payroll_data = read_from_file(FILENAME)
-    print(type(payroll_data))
+    #payroll_data = read_from_file(FILENAME)
+    # print(type(payroll_data))
+    
+    
 
 if __name__ == '__main__':
     main()
