@@ -19,7 +19,7 @@ def main():
 
     # Taking the json data from FILENAME. 
 
-    #payroll_data = read_from_file(FILENAME)
+    payroll_data = read_from_file(FILENAME)
     # print(type(payroll_data))
     
     
