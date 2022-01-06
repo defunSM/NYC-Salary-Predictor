@@ -1,6 +1,4 @@
 import os
-import aiohttp
-import asyncio
 
 from setup_nyc_payroll import download_data, read_from_file
 
